@@ -69,8 +69,8 @@ body {
 }
 
 .carousel .control-arrow:before {
-  border-left: 8px solid white;  /* left arrow */
-  border-right: 8px solid white; /* right arrow */
+  border-left: 8px solid white; 
+  border-right: 8px solid white; 
 }
 
 .carousel .control-dots .dot {
