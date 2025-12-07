@@ -1,0 +1,227 @@
+/* App.css */
+
+/* General body styles */
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header / Top Bar full width */
+.header {
+  width: 100%;
+  text-align: center;
+  background-color: #f06292;
+  color: white;
+  padding: 5vh 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  word-wrap: break-word;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.header p {
+  margin-top: 10px;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+}
+
+/* Carousel */
+.carousel-container {
+  max-width: 90%;
+  margin: 2rem auto;
+  position: relative;
+}
+
+.carousel-container img {
+  width: 100%;
+  height: auto; /* show full image */
+  max-height: 60vh;
+  object-fit: contain;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+}
+
+/* Carousel Arrows - always dark */
+.carousel .control-arrow {
+  background: rgba(0, 0, 0, 0.6); /* dark background */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  top: 50% !important; /* vertical center */
+  transform: translateY(-50%);
+  z-index: 2;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.carousel .control-arrow:hover {
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel .control-prev {
+  left: 10px;
+}
+
+.carousel .control-next {
+  right: 10px;
+}
+
+/* Optional: white arrow icons for contrast */
+.carousel .control-arrow:before {
+  border-left: 8px solid white;  /* left arrow */
+  border-right: 8px solid white; /* right arrow */
+}
+
+/* Carousel Indicators (dots) */
+.carousel .control-dots .dot {
+  background: rgba(0, 0, 0, 0.6);
+  width: 12px;
+  height: 12px;
+  margin: 0 4px;
+}
+
+.carousel .control-dots .dot.selected {
+  background: #333;
+}
+
+/* Container Section */
+.container {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2vw;
+  text-align: center;
+}
+
+.container h2 {
+  font-size: clamp(1.5rem, 2vw, 2rem);
+  margin-bottom: 1.5rem;
+  color: #f06292;
+}
+
+.container .text {
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* Quote Box */
+.quote-box {
+  font-style: italic;
+  background-color: #ffe0e9;
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 5px solid #f06292;
+  border-radius: 5px;
+  font-size: clamp(1rem, 1.2vw, 1.2rem);
+}
+
+/* Form Section */
+.form-section {
+  text-align: left;
+  margin-top: 3rem;
+}
+
+.form-section h2 {
+  color: #f06292;
+  margin-bottom: 1.2rem;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-section input,
+.form-section textarea {
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.form-section button {
+  padding: 0.8rem;
+  background-color: #f06292;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-section button:hover {
+  background-color: #ec407a;
+}
+
+/* Footer full width */
+.footer {
+  width: 100%;
+  text-align: center;
+  padding: 1.5rem 2vw;
+  background-color: #f06292;
+  color: white;
+  margin-top: 3rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .carousel-container img {
+    max-height: 50vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .carousel-container img {
+    max-height: 45vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 4vh 3vw;
+  }
+
+  .header h1 {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+  }
+
+  .header p {
+    font-size: clamp(0.8rem, 3vw, 1rem);
+  }
+
+  .container h2 {
+    font-size: clamp(1rem, 3vw, 1.5rem);
+  }
+
+  .carousel-container img {
+    max-height: 30vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: clamp(1rem, 6vw, 1.6rem);
+  }
+
+  .header p {
+    font-size: clamp(0.8rem, 4vw, 0.95rem);
+  }
+
+  .container h2 {
+    font-size: clamp(0.9rem, 4vw, 1.3rem);
+  }
+
+  .quote-box {
+    font-size: clamp(0.9rem, 3vw, 1rem);
+    padding: 1rem;
+  }
+}
