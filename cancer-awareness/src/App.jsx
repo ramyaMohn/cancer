@@ -3,7 +3,6 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "./App.css";
 
-// Import images from src/assets
 import hopeImg from "./assets/hope.jpeg";
 import fightImg from "./assets/fight.png";
 import supportImg from "./assets/support.png";
@@ -12,7 +11,7 @@ function App() {
   const [quote, setQuote] = useState("Loading inspiring quote...");
 
   useEffect(() => {
-    // Fetch quotes via CORS proxy
+    
     fetch(
       "https://api.allorigins.win/get?url=" +
         encodeURIComponent("https://type.fit/api/quotes")
@@ -35,7 +34,6 @@ function App() {
         <p>You are not alone. Early detection saves lives.</p>
       </header>
 
-      {/* Carousel Section */}
       <Carousel
         autoPlay
         infiniteLoop

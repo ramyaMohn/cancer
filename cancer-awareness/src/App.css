@@ -1,6 +1,4 @@
-/* App.css */
 
-/* General body styles */
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +6,6 @@ body {
   color: #333;
 }
 
-/* Header / Top Bar full width */
 .header {
   width: 100%;
   text-align: center;
@@ -32,7 +29,6 @@ body {
   font-size: clamp(0.9rem, 2vw, 1.2rem);
 }
 
-/* Carousel */
 .carousel-container {
   max-width: 90%;
   margin: 2rem auto;
@@ -41,20 +37,19 @@ body {
 
 .carousel-container img {
   width: 100%;
-  height: auto; /* show full image */
+  height: auto; 
   max-height: 60vh;
   object-fit: contain;
   border-radius: 10px;
   background-color: #f9f9f9;
 }
 
-/* Carousel Arrows - always dark */
 .carousel .control-arrow {
-  background: rgba(0, 0, 0, 0.6); /* dark background */
+  background: rgba(0, 0, 0, 0.6); 
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  top: 50% !important; /* vertical center */
+  top: 50% !important; 
   transform: translateY(-50%);
   z-index: 2;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
@@ -73,13 +68,11 @@ body {
   right: 10px;
 }
 
-/* Optional: white arrow icons for contrast */
 .carousel .control-arrow:before {
   border-left: 8px solid white;  /* left arrow */
   border-right: 8px solid white; /* right arrow */
 }
 
-/* Carousel Indicators (dots) */
 .carousel .control-dots .dot {
   background: rgba(0, 0, 0, 0.6);
   width: 12px;
@@ -91,7 +84,6 @@ body {
   background: #333;
 }
 
-/* Container Section */
 .container {
   max-width: 900px;
   margin: 4rem auto;
@@ -162,7 +154,6 @@ body {
   background-color: #ec407a;
 }
 
-/* Footer full width */
 .footer {
   width: 100%;
   text-align: center;
@@ -172,7 +163,6 @@ body {
   margin-top: 3rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1200px) {
   .carousel-container img {
     max-height: 50vh;
